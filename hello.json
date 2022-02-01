@@ -1,0 +1,9 @@
+{
+    "cities": [
+        "Mumbai",
+        "Pune",
+        "Bangalore"
+    ],
+    "mango": "I am a yellow fruit",
+    "age": 20
+}

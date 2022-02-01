@@ -1,0 +1,24 @@
+#YAML is case-sensitive
+#spaces are significant
+#indentation is importatnt
+
+#Collection of diff number of docs
+
+"apple" : "I am a red fruit"
+1: "This is John's roll number" # key-value pairs
+--- #separator between documents
+#lists
+ - apple
+ - orange
+ - mango
+ - Apple
+---
+cities: #
+  - Mumbai
+  - Pune
+  - Bangalore
+---
+cities:[Mumbai, Pune, Bangalore] #similar to the prev one
+---
+{mango: "I am a yellow fruit",age: 20}
+... #indicates the end of the document
