@@ -1,0 +1,49 @@
+# String variables
+myself : Suhaz
+age : "I am 21 years old"
+job : 'System Engineer'
+
+# -- Gives error for multi line --
+# bio : hey my name is Suhaz and I am a student at the university of california,
+# I am a computer science student and i am a system engineer.
+
+
+# -- multiple lines --
+bio : |
+hey my name is Suhaz and I am a student at the university of california,
+I am a computer science student and i am a system engineer.
+
+# -- single line in multiple line --
+message : >
+this will
+all be
+in one single line
+
+# same as
+message : this will all be in one single line
+
+# Numeric variables
+id : 1
+age : 21
+marks : 39.36
+
+#specify the type of the variable
+zero : !!int 0
+booleanValue : !!bool No #for false -> n, n, False, FALSE, for true -> y, Y, True, TRUE
+postiveNum : !!int 24
+negativeNum : !!int -24
+floatNum : !!float 24.36
+binaryNum : !!int 0b1010
+octalNum : !!int 0212
+hexNum : !!int 0xA
+commaValue : !!int 240_000 #240,000
+infinite : !!float .inf
+nan : !!float .nan
+
+#null type
+surname : !!null Null # null, Null, ~
+~ : this is a null key
+
+#date type
+
+today : 2022-02-01

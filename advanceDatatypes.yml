@@ -1,0 +1,77 @@
+student : !!seq
+- name
+- age
+- marks
+
+# some of the keys of the seq will be empty
+# sparse seq
+sparsedata : !!seq
+- name
+- age
+- marks
+-
+- Null
+
+#nested sequence
+-
+  - name
+  - age
+  - marks
+-
+  - apple
+  - orange
+  - mango
+
+#nested mapping: map within a map
+name : Suhaz
+role :
+  age : 21
+  job : System Engineer
+
+# same as
+name : Suhaz
+role : { age : 21, job : System Engineer }
+
+#pairs : keys may have duplicate values
+# !!pairs
+
+pair example : !!pairs
+- key : name
+- value : Suhaz
+# this will be an array of hasTables
+pair example : !!pairs
+- job : System Engineer
+- job : System Engineer
+
+#same as
+pair example : !!pairs [job : System Engineer, job : System Engineer ]
+
+# !!set will allow values to be unique
+names : !!set
+  ? Suhaz
+  ? Appu
+
+# dictionary !!omap
+people : !!omap
+  - Suhas:
+      - age: 21
+      - job: System Engineer
+  - Appu:
+      - age: 22
+      - job: System Engineer-3
+
+# reusing some properties using anchors
+
+fruit : &likes # what do we want to copy
+  like : apple
+  dislike : orange
+
+person1:
+  name : Suhaz
+  << : *likes # copy the properties of the anchor
+
+
+person2:
+  name : Appu
+  << : *likes # copy the properties of the anchor
+  dislike : mango # overrides the property of the anchor

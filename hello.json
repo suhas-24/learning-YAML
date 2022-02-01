@@ -5,5 +5,22 @@
         "Bangalore"
     ],
     "mango": "I am a yellow fruit",
-    "age": 20
+    "age": 20,
+    "sparsedata": [
+        "name",
+        "age",
+        "marks",
+        null,
+        null
+    ],
+    "pair example": [
+        [
+            "job",
+            "System Engineer"
+        ],
+        [
+            "job",
+            "System Engineer"
+        ]
+    ]
 }
