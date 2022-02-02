@@ -1,0 +1,18 @@
+{
+    "School": [
+        {
+            "name": "JNES",
+            "principal": "David",
+            "Students":[
+                {
+                    "rno" : 21,
+                    "name" : "John"
+                },
+                {
+                    "rno" : 21,
+                    "name" : "John"
+                }
+            ]
+        }
+    ]
+}
